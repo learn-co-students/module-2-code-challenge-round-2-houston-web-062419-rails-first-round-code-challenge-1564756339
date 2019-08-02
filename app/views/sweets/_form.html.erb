@@ -1,0 +1,6 @@
+<%= form_for @sweet do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.collection_check_boxes :vendor_ids, @vendors, :id, :name %>
+<%= f.submit %>
+<% end %>  
